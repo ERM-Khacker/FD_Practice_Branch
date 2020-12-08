@@ -1,6 +1,21 @@
-body{
-    background-color: black;
+label{
+    display: flex;
 }
-p{
-    color: blanchedalmond;
+.flex{
+    display: flex;
+}
+.flex > *{
+    flex: 1;
+}
+input:valid{
+    border: 1px solid green;
+}
+input:invalid{
+    border: 2px solid rebeccapurple;
+}
+input::placeholder{
+    color: orange;
+}
+input:checked{
+    margin-left: 25px;
 }
