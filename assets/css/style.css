@@ -1,21 +1,27 @@
-label{
-    display: flex;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 500px;
+  min-width: 300px; */
+ 
 }
-.flex{
-    display: flex;
+
+.fullNameOfUser {
+  display: flex;
+  padding: 10px;
+  
 }
-.flex > *{
-    flex: 1;
+
+.inp {
+  display: flex;
+  flex-grow: 1;
+  margin: 10px;
+
 }
-input:valid{
-    border: 1px solid green;
-}
-input:invalid{
-    border: 2px solid rebeccapurple;
-}
-input::placeholder{
-    color: orange;
-}
-input:checked{
-    margin-left: 25px;
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }

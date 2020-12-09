@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-<form method="GET">
-    <fieldset> <Legend>Enter your data</Legend>
-<label>
-    <span>Enter name</span>
-    <input autofocus type="text"
-    placeholder="Name"
-    name="FirstName"
-    required>
-</label>
-<label>
-    <span>Enter lastName</span>
-    <input type="text" placeholder="lastName"
-    name="lastName"
-    required>
-</label>
-<label>
-    <span>Enter passw</span>
-    <input type="text" placeholder="passw" name="passw" required>
-</label>
-</fieldset>
-<fieldset>
-    <legend>Select your Country and Town</legend>
-    <select name="town" multiple>
-        <optgroup label="Ukraine">
-            <option value="kyiv">Kyiv</option>
-            <option value="zaporizhzhia">Zaporizhzhia</option><option value="lviv">Lviv</option>
-        </optgroup>
-        <optgroup label="Amerika">
-            <option value="dallas">Dallas</option><option value="texas">Texas</option>
-        </optgroup>
-    </select>
-</fieldset>
-<fieldset>
-    <legend>Tell no more about yourself</legend>
-    <textarea wrap="hard" name="info" cols="30" rows="10"></textarea>
-</fieldset>
-<button type="submit">Good</button>
-</form>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register</h1>
+      <p>Create your account. It's free and only takes a minute</p>
+      <form class="registrationForm" method="GET">
+        <div class="fullNameOfUser">
+          <input
+            autofocus
+            type="text"
+            placeholder="First name"
+            name="FirstName"
+            required
+          />
+          <input type="text" placeholder="Last Name" name="lastName" required />
+        </div>
+        <input
+          class="inp"
+          type="email"
+          placeholder="Email"
+          name="email"
+          required
+        />
 
-</body>
+        <input
+          class="inp"
+          type="password"
+          placeholder="Password"
+          name="passw"
+          required
+        />
+
+        <input
+          class="inp"
+          type="password"
+          placeholder="Confirm Password"
+          name="passw"
+          required
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" />
+          <span>I accept the of Use & Privacy Police</span>
+        </div>
+        <input class="register" type="button" value="Register Now" name="Register" />
+      </form>
+    </div>
+  </body>
 </html>
